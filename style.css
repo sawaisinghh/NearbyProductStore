@@ -1,0 +1,352 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	text-decoration:none;
+	list-style: none;
+}
+body{
+	font-family:sans-serif;
+	background-position: center;
+	background-size: cover;
+	background-color: #e9efef66;
+	height:100%;
+	width: 100%;
+}
+/*search results and google map box*/
+main{
+	width:100%;
+	height:auto;
+	margin:30px 0;
+	background:white;
+}
+#main-container{
+	width:100%;
+	max-width:1340px;
+	height:auto;
+	background:white;
+	display:flex;
+	margin:5px auto;
+	padding:40px /*140px 30px 140px*/;
+}
+#main-container .search-container{
+	width:37%;
+	height:auto;
+	padding-right:20px;
+	padding-left:20px;
+}
+#main-container .search-container .search-heading{
+	width:100%;
+	height:auto;
+	margin-bottom:45px;
+}
+.search-container .search-heading h1{
+	font-size: 23px;
+	color:#000000cc;
+}
+.search-container .search-heading p{
+	font-weight: bold;
+	font-size: 13px;
+	font-family: sans-serif;
+	padding:15px 0;
+	color:#8b8585;
+}
+.search-heading .search-box{
+	width:100%;
+	height:40px;
+	border:1px solid black;
+	padding:5px 0;
+	background:white;
+	align-items: center;
+}
+.search-heading .search-box input{
+    width:89%;
+	height:30px;
+	padding-left:15px;
+	outline:none;
+	border:none;
+	background:none;	
+}
+.search-heading .search-box .search-btn{
+	width:10%;
+	height:30px;
+	float:right;
+	cursor: pointer;
+	outline:none;
+	border:none;
+	background:none;
+}
+
+/*search results*/
+
+.search-container .search-result{
+	width:100%;
+	height:400px;
+	background:white;
+	padding:5px 0;
+	overflow:scroll;
+}
+.search-result table{
+	border-collapse:collapse;
+	width:100%;
+	font-size:14px;
+	text-align:left;
+}
+.search-result table tr{
+	border:1px solid #D6DBDF;
+/*	border:none;*/
+	width:100%;
+}
+table tr:nth-child(even){
+    background:#F2F3F4;
+}
+table tr:hover{
+    background:#F2F3F4;;
+}
+table tr td{
+    padding:0 6px;
+}
+table tr .pdimg{
+	width:109px;
+    height:93px;
+    padding-top:4px;
+}
+table tr .pdimg img{
+	width:105px;
+    height:93px
+}
+/*table tr .pdbio{
+	padding:0 12px;
+}*/
+table tr .pdbio h3{
+	padding-top:2px;
+    color:#000000cc;
+    font-size:18px;
+}
+table tr .pdbio p{
+	color:#8b8585;
+	padding:2px 0;
+	font-size: 12px;
+}
+table tr .pdbio .details:hover, .spname:hover{
+	color:#1944bccc;
+	cursor:pointer; 
+}
+.search-result table tr .get-direction{
+	background-color:red;
+	color:white;
+	font-weight: bold;
+	outline:none;
+	border:none;
+	padding:6px 8px;
+	cursor: pointer;
+}
+.search-result table tr .get-direction:hover{
+	opacity:0.8;
+}
+
+/*google map box*/
+
+#main-container .map-container{
+	width:63%;
+	height:500px;
+	background:white;
+	padding-left:20px;
+	padding-right:20px;
+}
+.map-container #map-box{
+	width:94%;
+	height:500px;
+	margin-left:30px;
+}
+/*site information section*/
+
+#info-container{
+	width:100%;
+	height:auto;
+	background:white;
+}
+#info-container .site-info{
+	width:100%;
+	max-width: 1250px;
+	height:auto;
+	display:flex;
+	padding:50px 0 30px;
+	margin:30px auto;
+}
+
+#info-container .site-info .img{
+	padding:40px 30px 0 40px;
+	width:50%;
+	height:auto;
+}
+#info-container .site-info .img img{
+	width:350px;
+	height:550px;
+}
+#info-container .site-info .content{
+	width:50%;
+	height:auto;
+	padding-right:5px;
+	margin-top:150px;
+}
+#info-container .site-info .content h1{
+	/*letter-spacing:1px;*/
+	font-size: 32px;
+	color:#000000cc;
+}
+#info-container .site-info .content p{
+	font-weight: bold;
+	font-size: 14px;
+	color:#8b8585;
+}
+#info-container .site-info .content p i{
+	margin-right:8px;
+	color:red;
+}
+#info-container .site-info .content #para{
+	padding:27px 0 16px 0;
+}
+#info-container .site-info .content #pid{
+	padding:7px;
+}
+
+/*shop registeration information*/
+
+#info-container .register-info{
+	width:100%;
+	height:auto;
+	text-align: center;
+	padding:80px 0;
+}
+#info-container .register-info h1{
+	font-size: 40px;
+	color:#000000cc;
+}
+#info-container .register-info h1 img{
+	width:60px;
+	height:60px;
+	margin-left:6px;
+	margin-top:-20px;
+}
+#info-container .register-info p{
+    font-weight: bold;
+	font-size: 14px;
+	color:#8b8585;
+	padding:30px 10px 60px;	
+}
+#info-container .register-info a{
+	color:white;
+	background:#0c35c9;
+	padding:12px 27px;
+	font-weight: bold;
+	font-size:26px
+	border-radius:4px;
+}
+#info-container .register-info a:hover{
+	opacity:0.8;
+}
+
+/*aboutus section*/
+
+#aboutus{
+	width:100%;
+	height:auto;
+    margin:20px 0;
+    padding:30px 30px;
+    background-color: white;
+}
+#aboutus .heading{
+	text-align: center;
+	font-size: 33px;
+	color:#000000cc;
+	margin:40px 0;
+}
+
+#aboutus .card-wrapper{
+	width:100%;
+	height:auto;
+	background-color: #e9efef66;
+	display: flex;
+	flex-wrap: wrap;
+}
+#aboutus .card-wrapper .card{
+	width:250px;
+	height:350px;
+	background:white;
+	box-shadow: 0 6px 6px -5px #85929E;
+	text-align: center;
+	margin:10px 20px;
+	padding-bottom:10px;
+	transition: .4s;
+}
+#aboutus .card-wrapper .card:hover{
+    padding:20px;
+    opacity:0.8;
+
+}
+.card-wrapper .card .card-img{
+ 	width:100%;
+ 	height:45%;
+ 	clip-path:polygon(0% 0%, 100% 0%, 100% 75%, 0% 100%);
+ }
+.card-wrapper .card .profile-img{
+ 	width:65px;
+ 	height:65px;
+ 	border-radius:50%;
+ 	margin-top:-8px;
+ }
+ .card-wrapper .card h1{
+ 	color:#000000cc;
+ 	font-size: 22px;
+ }
+ .card-wrapper .card .job-title{
+    font-size:20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 7px 0;
+    color:#bebcbc;
+ }
+ .card-wrapper .card .about{
+   font-size: 12px;
+   font-weight: bold;
+   color:#8b8585;
+ }
+
+
+ @media only screen and (max-width: 800px) {
+   #main-container{
+   	flex-direction: column;
+   	padding:-0 -120px;
+   }
+   #main-container .search-container{
+   	width:100%;
+   }
+   #main-container .map-container{
+   	width:100%;
+   	margin-top:40px;
+   }
+   .map-container .map-box{
+   	width:100%;
+   }
+   #info-container .site-info{
+    /*padding-bottom:-10px;*/
+    }
+    #info-container .site-info .img img{
+   	width:220px;
+   	height:370px;
+   	margin-left:-20px;
+   }
+   #info-container .site-info .content{
+   	margin-left:20px;
+   }
+
+   #info-container .site-info .content h1{
+    font-size:20px;
+    margin-top:-60px;
+   }
+   #info-container .site-info .content p{
+   	font-size: 12px;
+   }
+  
+}
