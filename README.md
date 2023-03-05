@@ -1,3 +1,5 @@
+Nearby Product Store
+
 So the actual idea of this project is to create a environment where local shopkeeper may register their shops here, and can list all their available products on this website. And customer may search their product here and get the list of all nearby product stores where the searched product is available. And get the direction of that nearby local store. It saves time for customers to find their products in nearby area, they don’t need to visit all the stores for finding their required products.
 Basically, the Nearby Product Store is a website which can be accessible to those who have internet connection.
 The website is for 3 types of people that varies from each other and they are:
